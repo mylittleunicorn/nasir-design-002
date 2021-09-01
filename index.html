@@ -14,7 +14,27 @@
     <!-- NAVBAR -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
         <div class="container">
-            <a href="#" class="navbar-brand">Deeee Ku</a>
+            <a href="#" class="navbar-brand text-black">Deeee Ku</a>
+            <button
+                type="button"
+                class="navbar-toggler"
+                data-bs-target="#navbarNav"
+                data-bs-toggle="collapse"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle Navbar"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="navbar-item"><a href="#" class="nav-link text-black">Home</a></li>
+                    <li class="navbar-item"><a href="#" class="nav-link text-black">About US</a></li>
+                    <li class="navbar-item"><a href="#" class="nav-link text-black">Contack Us</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -22,6 +42,35 @@
     <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
         <div class="content text-center">
             <h1 class="text-white">DEEEE KU</h1>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT AREA -->
+    <div class="container my-5 d-grid gap-5">
+        <div class="p-5 border">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam natus, doloremque, aperiam porro autem in earum magni, laboriosam sequi aliquid rerum temporibus laudantium odit nesciunt quasi hic aut repellat laborum!
+            </p>
+        </div>
+        <div class="p-5 border">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam natus, doloremque, aperiam porro autem in earum magni, laboriosam sequi aliquid rerum temporibus laudantium odit nesciunt quasi hic aut repellat laborum!
+            </p>
+        </div>
+        <div class="p-5 border">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam natus, doloremque, aperiam porro autem in earum magni, laboriosam sequi aliquid rerum temporibus laudantium odit nesciunt quasi hic aut repellat laborum!
+            </p>
+        </div>
+        <div class="p-5 border">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam natus, doloremque, aperiam porro autem in earum magni, laboriosam sequi aliquid rerum temporibus laudantium odit nesciunt quasi hic aut repellat laborum!
+            </p>
+        </div>
+        <div class="p-5 border">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam natus, doloremque, aperiam porro autem in earum magni, laboriosam sequi aliquid rerum temporibus laudantium odit nesciunt quasi hic aut repellat laborum!
+            </p>
         </div>
     </div>
 
@@ -33,5 +82,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     -->
+    <script>
+        var nav = document.querySelector('nav');
+        window.addEventListener('scroll', function(){
+            if(window.pageYOffset > 200){
+                nav.classList.add('bg-light','shadow');
+            }else{
+                nav.classList.remove('bg-light','shadow');
+            }
+        });
+    </script>
   </body>
 </html>
